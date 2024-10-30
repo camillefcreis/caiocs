@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 Meses de Amor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #7fbdff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .timeline {
+            list-style-type: none;
+            padding: 0;
+        }
+        .timeline li {
+            background: #e0e0e0;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #7fbdff;
+            color: rgb(0, 0, 0); /* cor da ultima escrita */
+        }
+        #response {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Os 5 melhores meses da minha vida! <3</h1>
+    <h2>C&C</h2>
+</header>
+
+<div class="container">
+    <section>
+        <h3>Queria te falar que te amo muuito, parabéns moziii</h3>
+        <p>Hoje completamos 5 meses incríveis juntos! cada momento ao seu lado é especial e sou muito grata por te ter. Te amo!</p>
+    </section>
+
+    <section class="gallery">
+        <h3>Nossa galeria!</h3>
+        <img src="caioecamilledivos.jpg" alt="Foto 1">
+        <img src="camilleecaiodivos.jpg" alt="Foto 2">
+        <img src="amorecos.jpg" alt="Foto 3">
+    </section>
+
+    <section>
+        <h3>Uma Pergunta Especial</h3>
+        <button id="askButton">Quer namorar comigo?</button>
+        <div class="container">
+            <section>
+                <button id="yesButton">Sim!</button>
+                <button id="noButton">Não!</button>
+                <div id="response" class="hidden"></div>
+            </section>
+        </div>
+    </section>
+
+    <footer>
+        <p>Obrigado por esses 5 meses! Mal posso esperar para ver o que o futuro nos reserva.</p>
+    </footer>
+</div>
+
+<script>
+    // Seleciona os botões e a div de resposta
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+    const responseDiv = document.getElementById('response');
+
+    // Adiciona evento de clique para o botão "Sim!"
+    yesButton.addEventListener('click', function() {
+        responseDiv.classList.remove('hidden'); // Mostra a div de resposta
+        responseDiv.textContent = "Te amo, momoxii! ❤️"; // Mensagem ao clicar em "Sim!"
+    });
+
+    // Adiciona evento de clique para o botão "Não!"
+    noButton.addEventListener('click', function() {
+        responseDiv.classList.remove('hidden'); // Mostra a div de resposta
+        responseDiv.textContent = "Coi né, coitado, não tem opção de não rss."; // Mensagem ao clicar em "Não!"
+    });
+</script>
+
+</body>
+</html>
